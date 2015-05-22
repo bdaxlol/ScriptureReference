@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:clickable="true"
+    android:onClick="android:onClick=&quot;nextActivity&quot;">
+
+    <TextView android:text="@string/book" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookLabel"
+        android:layout_marginTop="83dp"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapLabel"
+        android:textSize="30sp"
+        android:layout_below="@+id/bookField"
+        android:layout_alignRight="@+id/verseLabel"
+        android:layout_alignEnd="@+id/verseLabel"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="@string/verses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verseLabel"
+        android:textSize="30sp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/chapField"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bookField"
+        android:layout_below="@+id/bookLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/here"
+        android:inputType="text"
+        android:enabled="true"
+        android:editable="false"
+        android:lines="1"
+        android:linksClickable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapField"
+        android:hint="@string/here"
+        android:layout_below="@+id/chapLabel"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verseField"
+        android:hint="@string/here"
+        android:layout_below="@+id/verseLabel"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_description"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:id="@+id/shareButton"
+        android:layout_marginBottom="19dp"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="nextActivity"
+        android:enabled="true" />
+
+</RelativeLayout>

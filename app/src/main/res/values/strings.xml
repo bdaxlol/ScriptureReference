@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Scripture Reference</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="book">Enter Book:</string>
+    <string name="chapter">Enter Chapter:</string>
+    <string name="verse">Enter Verse(s)</string>
+    <string name="verses">Enter Verse(s):</string>
+    <string name="here">here</string>
+    <string name="app_description">Share your favorite scripture!</string>
+    <string name="share">Share!</string>
+    <string name="title_activity_display">DisplayActivity</string>
+</resources>
